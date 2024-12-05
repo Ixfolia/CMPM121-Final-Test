@@ -35,7 +35,7 @@ export class Play extends Phaser.Scene {
     }
 
     preload() {
-        const url = '/CMPM121-Final-Test/assets/scenarios/level1.txt';
+        const url = './CMPM121-Final-Test/assets/scenarios/level1.txt';
         console.log('Loading level file from:', url);
         this.load.text('level1', url);
         // this.load.text('level1', '/CMPM121-Final-Test/assets/scenarios/level1.txt');
