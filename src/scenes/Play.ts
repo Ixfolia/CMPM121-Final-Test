@@ -52,7 +52,6 @@ export class Play extends Phaser.Scene {
         // Initialize game state
         this.grid = new Grid(this, NUM_ROWS, NUM_COLS, CELL_SIZE);
         character = this.add.sprite(CELL_SIZE / 2, CELL_SIZE / 2, 'player').setScale(.1);
-        character.isMoving = false;
         cursors = this.input.keyboard!.createCursorKeys();
         const gridHeight = NUM_ROWS * CELL_SIZE;
         const totalGameHeight = this.scale.height;
