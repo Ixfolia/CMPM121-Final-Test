@@ -40,7 +40,7 @@ export class Play extends Phaser.Scene {
             frameHeight: CELL_SIZE * 10, // Height of each tile
         });
         this.load.image('player', 'https://raw.githubusercontent.com/staypat/CMPM121-Final-Test/refs/heads/main/assets/astronaut.png');
-        const url = './CMPM121-Final-Test/assets/scenarios/level1.txt';
+        const url = '/CMPM121-Final-Test/assets/scenarios/level1.txt';
         console.log('Loading level file from:', url);
         this.load.text('level1', url);
         // this.load.text('level1', '/CMPM121-Final-Test/assets/scenarios/level1.txt');
@@ -52,6 +52,7 @@ export class Play extends Phaser.Scene {
         // Initialize game state
         this.grid = new Grid(this, NUM_ROWS, NUM_COLS, CELL_SIZE);
         character = this.add.sprite(CELL_SIZE / 2, CELL_SIZE / 2, 'player').setScale(.1);
+        character.isMoving = false;
         cursors = this.input.keyboard!.createCursorKeys();
         const gridHeight = NUM_ROWS * CELL_SIZE;
         const totalGameHeight = this.scale.height;
