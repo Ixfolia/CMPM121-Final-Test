@@ -1,4 +1,4 @@
-# CMPM121-Final
+# CMPM121-Final-Test
 # Devlog Entry - [11/27/2024]
 ## How we satisfied the software requirements
 [F1.a] The important state of our game's grid is backed by a single continuous byte array in Array of Structures format. It is Uint8Array called "gridData" that holds the grid's sun levels, water levels, plant type, and growth level. Each part of our
